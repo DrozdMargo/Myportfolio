@@ -4,35 +4,22 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Creating Nav menu</title>
-	<!-- 	<link rel="stylesheet" type="text/css" href='stylesheets/main.css'>
-		<link rel="stylesheet" type="text/css" href='stylesheets/icon.css'> -->
-		<link rel="stylesheet" type="text/css" href='stylesheets/codepenmenu.css'>
-		<link rel="stylesheet" type="text/css" href='stylesheets/style.css'>
-		<script src="bower_components/jquery/dist/jquery.min.js"></script>
-				
-		
-
-	</head>
-<body>
-<!-- <div id="page">
-
+	 	<!-- <link rel="stylesheet" type="text/css" href='css/style.css'> -->
+	 	<link rel="stylesheet" type="text/css" href='stylesheets/codepenmenu.css'>
 	
-	<nav class="full-menu" id="myNav">
-		<a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-			<ul class="full-menu-content">
-				<li><a href="">About</a></li>
-				<li><a href="">Portfolio</a></li>
-				<li><a href="">Our Team</a></li>
-				<li><a href="">Services</a></li>
-				<li><a href="">Contact</a></li>
-			</ul>
-	</nav>
-		<a href="#" onclick="openNav()" class="openbtn">&#9776;</a>
-</div>
- -->
+				
+		<script   src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="http://scrollmagic.io/js/lib/greensock/TweenMax.min.js"></script>
+<script src="bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
+<script src="bower_components/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+<script src="bower_components/scrollmagic/scrollmagic/minified/plugins/animation.velocity.min.js"></script>
+<script src="bower_components/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+</head>
+<body>
 
 
-<!-- codepen -->
+
+
 <div class="button_container" id="toggle">
   <span class="top"></span>
   <span class="middle"></span>
@@ -50,16 +37,24 @@
   </nav>
 </div>
 
-<section></section>
-<section></section>
-<section></section>
 
-<!-- end codepen -->
+<div id="pinContainer">
+	<section class="panel blue">
+		<b>ONE</b>
+	</section>
+	<section class="panel turqoise">
+		<b>TWO</b>
+	</section>
+	<section class="panel green">
+		<b>THREE</b>
+	</section>
+	<section class="panel bordeaux">
+		<b>FOUR</b>
+	</section>
+</div>
 
-<script   src="https://code.jquery.com/jquery-3.1.0.min.js" crossorigin="anonymous"></script>
-	<script src="js/codepen.js"></script>
-	
 
-		
+<script src="js/scroll.js"></script>
+<script src="js/codepen.js"></script>
 </body>
 </html>
