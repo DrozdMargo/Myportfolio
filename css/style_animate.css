@@ -1,0 +1,26 @@
+
+.boxHidded{
+	visibility: hidden;
+}
+
+.boxVisible,
+.fadeInUp,
+.fadeInRight,
+.fadeInLeft{
+	visibility: visible;
+}
+.progress.progress-bar .text{
+	transition-duration: 3s;
+}
+/*.delay-05s {
+	animation-delay: .5s;
+}*/
+/*.text-large.text{
+	animation-duration: 3s;
+	transition-duration: 5s;
+}
+.goto-bio {
+	animation-delay: 2s;
+	animation-duration: 4s;
+}
+*/

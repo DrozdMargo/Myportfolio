@@ -4,12 +4,12 @@ $(function () { // wait for document ready
 
 		// define movement of panels
 		var wipeAnimation = new TimelineMax()
-			.fromTo("section.panel.turqoise", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
-			.fromTo("section.panel.green",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
-			.fromTo("section.panel.bordeaux", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
+			.fromTo("section#about.turqoise", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
+			.fromTo("section#portfolio.green", 1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
+			.fromTo("section#contacts.bordeaux", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
 
 		// create scene to pin and link animation
-		new ScrollMagic.Scene({
+		var scene = new ScrollMagic.Scene({
 				triggerElement: "#pinContainer",
 				triggerHook: "onLeave",
 				duration: "400%"
@@ -18,4 +18,9 @@ $(function () { // wait for document ready
 			.setTween(wipeAnimation)
 			// .addIndicators() // add indicators (requires plugin)
 			.addTo(controller);
+
+		
 	});
+
+
+

@@ -1,0 +1,516 @@
+@import url(http://fonts.googleapis.com/css?family=Vollkorn|Roboto);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+}
+body p {
+  color: #818181;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  background-image: url("../img/molly.jpg");
+  background-attachment: scroll;
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 620px;
+}
+header .container-info {
+  position: relative;
+}
+header .text-container {
+  position: absolute;
+  border: 7px solid;
+  border-color: rgba(255, 125, 0, 0.3);
+  width: 350px;
+  height: 200px;
+  padding: 25px;
+  top: 150px;
+  left: 120px;
+}
+header .text-container span {
+  display: block;
+  letter-spacing: 0.01em;
+}
+header .text-container span.text-medium {
+  font-size: 2em;
+}
+header .text-container span.text-large {
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.goto-bio {
+  position: absolute;
+  width: 125px;
+  height: 40px;
+  z-index: 1;
+  top: 350px;
+  left: 490px;
+}
+.goto-bio a {
+  display: block;
+  vertical-align: middle;
+  padding: 11px;
+  background-color: #ff7e00;
+}
+.goto-bio .text-small {
+  color: #fff;
+  font-size: 1em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+section {
+  display: block;
+  width: 100%;
+  background-color: #000;
+}
+section#about_me {
+  padding-top: 120px;
+}
+section .container {
+  max-width: 1200px;
+  height: 510px;
+  text-align: center;
+  background-color: #1e1e1e;
+  margin: auto;
+  color: #fff;
+  position: relative;
+  clear: both;
+  border: 1px solid #252525;
+}
+section .container .container-info {
+  width: 60%;
+  height: 100%;
+  float: left;
+  border-left: 1px solid #252525;
+  text-align: left;
+}
+section .container .container-left {
+  width: 29%;
+  float: left;
+  height: 100%;
+}
+section .container .links {
+  width: 82px;
+  float: right;
+  box-sizing: border-box;
+}
+section .container .links a {
+  background-color: #212121;
+  display: block;
+  height: 84px;
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid #252525;
+}
+section .container .links a:last-child {
+  border-bottom: none;
+}
+
+.info {
+  display: table;
+  font-size: .9em;
+  margin-bottom: 35px;
+  position: relative;
+  table-layout: fixed;
+  width: 70%;
+  margin: 35px auto;
+}
+.info .info-value {
+  float: right;
+  font-size: 1.2em;
+}
+.info .info-value::after {
+  background: #252525;
+  bottom: -18px;
+  content: '';
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.links span {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  color: #707070;
+  font-size: 20px;
+}
+.links span:hover {
+  color: #ff7e00;
+}
+
+.container-info-title {
+  margin: 50px auto;
+  width: 70%;
+  margin-top: 90px;
+}
+.container-info-title h3 {
+  color: #ff7e00;
+  font-size: 2em;
+  font-weight: 500;
+  text-align: left;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.container-info-title h3:before {
+  background: #ff7e00;
+  border-radius: 15px 0 30px 15px;
+  content: '';
+  display: block;
+  height: 15px;
+  position: absolute;
+  top: 140px;
+  width: 40px;
+}
+
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 30%;
+  left: -80%;
+  margin-bottom: 5px;
+  margin-left: -83px;
+  padding: 7px 2px;
+  width: 135px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #000;
+  background-color: rgba(51, 51, 51, 0.9);
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 45%;
+  left: -5%;
+  margin-left: -7px;
+  width: 0;
+  border: 5px solid transparent;
+  border-left: 5px solid rgba(51, 51, 51, 0.9);
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.container-photo {
+  -webkit-filter: sepia(0%);
+  -webkit-filter: brightness(50%);
+  position: relative;
+  background-image: url("../img/iam.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.container-photo .photo-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #000;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px;
+  display: none;
+  text-align: left;
+  padding: 10px;
+}
+
+.container-photo:hover {
+  -webkit-filter: sepia(100%);
+  -webkit-filter: brightness(100%);
+}
+.container-photo:hover .photo-text {
+  display: block;
+}
+
+#skills {
+  padding-top: 120px;
+}
+#skills .container-info-title {
+  width: 100px;
+  text-align: left;
+  height: 60px;
+  margin: 50px;
+}
+#skills h3:before {
+  top: 100px;
+}
+
+ul.hi-lights {
+  padding: 0 50px;
+}
+ul.hi-lights li {
+  list-style: none;
+  border-bottom: 1px solid #252525;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: left;
+  padding-bottom: 20px;
+  letter-spacing: 0.02em;
+  color: #c4c4c4;
+}
+ul.hi-lights li:before {
+  color: #ff7e00;
+  content: '+';
+  padding-right: 7px;
+}
+
+.container-right {
+  width: 70%;
+  height: 100%;
+  float: left;
+  border-left: 1px solid #252525;
+  vertical-align: middle;
+}
+.container-right .progress-bar-container {
+  width: 80%;
+  display: table;
+  margin: 70px auto;
+}
+
+.progress {
+  display: table-row;
+  position: relative;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  margin: 0.5rem 0 1rem 0;
+  overflow: hidden;
+}
+.progress .progress-title {
+  height: 60px;
+  display: table-cell;
+  padding-right: 30px;
+  vertical-align: top;
+  color: #747474;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  top: 1px;
+  width: 10%;
+}
+.progress .progress-bar {
+  position: relative;
+  width: 85%;
+  z-index: 0;
+  display: table-cell;
+  height: 60px;
+  padding-right: 30px;
+  position: relative;
+  vertical-align: top;
+}
+.progress .progress-bar:before {
+  background: #252525;
+  border-radius: 25px 0 50px 25px;
+  content: '';
+  display: block;
+  height: 10px;
+  position: absolute;
+  top: 3px;
+  width: 100%;
+  z-index: -1;
+}
+.progress .progress-bar .bar {
+  background-color: #333;
+  border-radius: 25px 0 50px 25px;
+  display: block;
+  height: 10px;
+  position: relative;
+  top: 3px;
+  width: 0;
+}
+.progress .progress-bar .text {
+  color: #feb834;
+  font-size: 16px;
+  margin-left: -30px;
+  position: absolute;
+  top: -20px;
+}
+.progress .progress-bar .text.text::after {
+  content: '%';
+}
+
+#portfolio {
+  background-image: linear-gradient(to bottom, #000000 0%, #252525 100%);
+  height: auto;
+  padding-top: 50px;
+}
+#portfolio h1 {
+  color: #ff7e00;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.2em;
+  padding-bottom: 70px;
+}
+#portfolio h1 span {
+  padding-right: 15px;
+  color: #ff7e00;
+}
+#portfolio .portfolio-row {
+  height: 585px;
+  width: 925px;
+  margin: 0 auto;
+}
+#portfolio .portfolio-row:last-child {
+  height: 350px;
+}
+#portfolio .portfolio-item-big,
+#portfolio .portfolio-item-small {
+  filter: opacity(77%);
+  -webkit-filter: opacity(77%) sepia(0.5) blur(1px);
+}
+#portfolio .portfolio-item-big:hover,
+#portfolio .portfolio-item-small:hover {
+  transform: scale3d(1.02, 1.02, 1);
+  transition: transform .4s;
+  -webkit-filter: opacity(85%) sepia(0.5) blur(0);
+  -webkit-filter: opacity(85%) sepia(0.5) blur(0);
+}
+#portfolio .portfolio-item-big:hover .portfolio-info,
+#portfolio .portfolio-item-small:hover .portfolio-info {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+#portfolio .portfolio-item-big:hover .portfolio-info .portfolio-text,
+#portfolio .portfolio-item-small:hover .portfolio-info .portfolio-text {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+
+.portfolio-item-big {
+  width: 610px;
+  height: 570px;
+  background-color: #ffd;
+  float: left;
+  margin-top: 10px;
+}
+
+.portfolio-item-small {
+  width: 295px;
+  height: 280px;
+  background-color: #012;
+  float: left;
+  margin: 10px 0 0 20px;
+}
+.portfolio-item-small:first-child {
+  margin-left: 0;
+}
+
+.portfolio-info {
+  display: none;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+.portfolio-info h2 {
+  color: #ff7e00;
+}
+.portfolio-info a.preview {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  float: left;
+}
+.portfolio-info a.preview.fancybox {
+  margin-left: 15px;
+}
+.portfolio-info a.preview span {
+  position: absolute;
+  color: #ff7e00;
+  font-size: 20px;
+  top: 25%;
+  left: 30%;
+}
+.portfolio-info a.preview span:hover {
+  color: #ff4900;
+}
+
+#contact {
+  background-image: linear-gradient(to bottom, #252525 0%, #000000 100%);
+}
+#contact h1 {
+  color: #ff7e00;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.2em;
+  padding: 50px 0 100px 0;
+  margin: 0;
+}
+#contact h1 span {
+  padding-right: 15px;
+  color: #ff7e00;
+}

@@ -1,60 +1,475 @@
 <!DOCTYPE HTML>
-<html class="no-js">
+<html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Creating Nav menu</title>
-	 	<!-- <link rel="stylesheet" type="text/css" href='css/style.css'> -->
-	 	<link rel="stylesheet" type="text/css" href='stylesheets/codepenmenu.css'>
-	
-				
-		<script   src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-<script src="http://scrollmagic.io/js/lib/greensock/TweenMax.min.js"></script>
-<script src="bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
-<script src="bower_components/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
-<script src="bower_components/scrollmagic/scrollmagic/minified/plugins/animation.velocity.min.js"></script>
-<script src="bower_components/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
-</head>
+	 	<link rel="stylesheet" type="text/css" href='stylesheets/menu.css'>	
+	 	<link rel="stylesheet" type="text/css" href="css/themify-icons/themify-icons.css">
+	 	<link rel="stylesheet" type="text/css" href='stylesheets/style.css'>
+	 	<link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css">
+	 	<link rel="stylesheet" type="text/css" href='css/style_animate.css'>
+	 	<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/animate.css/3.1.0/animate.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.js"></script> 
+	 	<script src="fancybox/jquery.fancybox.pack.js"></script>
+		<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
+		<script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>		
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
+			<style>
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 100500;
+}
+.preloader3 {
+	position: absolute;
+	top: 50%;
+	left:50%;
+   width:35px;
+   height:35px;
+   display:inline-block;
+   padding:0px;
+   border-radius:100%;
+   border:2px solid;
+   border-top-color:rgba(0,0,0, 0.65);
+   border-bottom-color:rgba(0,0,0, 0.65);
+   border-left-color:rgba(0,0,0, 0.15);
+   border-right-color:rgba(0,0,0, 0.15);
+   -webkit-animation: preloader3 0.8s ease-in-out infinite alternate;
+   animation: preloader3 0.8s ease-in-out infinite alternate;
+}
+@keyframes preloader3 {
+   from {transform: rotate(0deg);}
+   to {transform: rotate(360deg);}
+}
+@-webkit-keyframes preloader3 {
+   from {-webkit-transform: rotate(0deg);}
+   to {-webkit-transform: rotate(360deg);}
+}
+</style>
+	</head>
 <body>
 
+<!-- <div id="page-preloader"><div class="preloader3"></div></div> -->
+ 
+<!-- <script type="text/javascript">
+$(window).on('load', function () {
+    var $preloader = $('#page-preloader'),
+        $spinner   = $preloader.find('.preloader3');
+        $spinner.fadeOut(650, function() {
+  $preloader.fadeOut('slow');
+});
+});
+</script> -->
 
+<header>
+	<div class="page-wrap">
+	
+		
+		<div class="text-container animated fadeInDown">
+			<span class="text-medium text animated fadeInDown">Hi! I'm</span>
+			<span class="text-large text boxHidded">Margo Drozd</span>
+			<span class="text-medium text boxHidded delay-1">Front-end developer</span>
+			
+		</div>
 
-
-<div class="button_container" id="toggle">
-  <span class="top"></span>
-  <span class="middle"></span>
-  <span class="bottom"></span>
-</div>
+		<div class="goto-bio boxHidded"><a href="#About_me" class="text-small text">About me</a></div>
+	
+	</div>
+</header>
+<!-- menu -->
+	<div class="button_container" id="toggle">
+	  <span class="top"></span>
+	  <span class="middle"></span>
+	  <span class="bottom"></span>
+	</div>
 
 <div class="overlay" id="overlay">
   <nav class="overlay-menu">
     <ul>
-      <li ><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Work</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contacts">Contact me</a></li>
     </ul>
   </nav>
 </div>
+<!-- end menu -->
 
+<section id="about_me">
+			<div class="container box3 animated boxHidded">
+				<div class="container-photo container-left clearfix">
+					<div class="photo-text">Advanced web developer with 12 years of experience in structuring, developing & implementing interactive website with the best use of technology & SEO to drive traffic.</div>
+				</div>
+				<div class="container-info clearfix">
+					<div class="container-info-title"><h3>About me</h3></div>
+					<div class="container-info-card">
+						<p class="info">
+						<span class="info-title">Full name</span> <span class="info-separator">:</span>
+						<span class="info-value">Margo Drozd</span></p>
+						<p class="info">
+						<span class="info-title">Age</span> <span class="info-separator">:</span>
+						<span class="info-value">25</span></p>
+						<p class="info">
+						<span class="info-title">Address</span> <span class="info-separator">:</span>
+						<span class="info-value">Ukraine, Kramatorsk</span></p>
+						
+						<p class="info">
+						<span class="info-title">Phone</span> <span class="info-separator">:</span>
+						<span class="info-value">+380956111773</span></p>
+						<p class="info">
+						<span class="info-title">Email</span> <span class="info-separator">:</span>
+						<span class="info-value">margodrozd.1@gmail.com</span></p>
+					</div>
+				</div>
+				<div class="links">
+							<a href="" class="tooltip" data-tooltip="download this cv" data-delay="50" data-position="left"><span class="ti-download" download></span></a>
+							<a href="#" class="tooltip" data-tooltip="skype: drozd-margo" data-delay="50"><span class="ti-skype"></span></a>
+							<a href="#" class="tooltip" data-tooltip="fork me on github" data-delay="50"><span class="ti-github"></span></a>
+							<a href="#" class="tooltip" data-tooltip="follow on linkedin" data-delay="50"><span class="ti-linkedin"></span></a>
+							<a href="#" class="tooltip" data-tooltip="follow on facebook" data-delay="50"><span class="ti-facebook"></span></a>		
+							<a href="#" class="tooltip" data-tooltip="follow on google+" data-delay="50"><span class="ti-google"></span></a>
+							
+				</div>
+			</div>
+		</section>
 
-<div id="pinContainer">
-	<section class="panel blue">
-		<b>ONE</b>
+	<section id="skills">
+			<div class="container  box3 animated boxHidded">
+				<div class="container-left">
+					<div class="container-info-title"><h3>skills</h3></div>
+					<ul class="hi-lights">
+						<li>Application Development</li>
+						<li>Responsive and Mobile Design</li>
+						<li>Cross Broser Development</li>
+						<li>Object Oriented JavaScript</li>
+						<li>Web Performance</li>
+					</ul>
+				</div>
+				<div class="container-right">
+					<div class="progress-bar-container">
+						<div class="progress">
+							<h3 class="progress-title">html, css3</h3>
+							<div class="progress-bar" data-percent="92%">
+								<span class="bar"></span>
+								<span class="text">92</span>
+							</div>
+						</div>
+						<div class="progress"><h3 class="progress-title">Twitter Bootstrap</h3>
+							<div class="progress-bar" data-percent="85%">
+								<span class="bar"></span>
+								<span class="text">85</span>
+							</div>
+						</div>
+						<div class="progress"><h3 class="progress-title">sass</h3>
+							<div class="progress-bar" data-percent="65%">
+								<span class="bar"></span>
+								<span class="text">65</span>
+							</div>
+						</div>
+						<div class="progress">
+							<h3 class="progress-title">JavaScript</h3>
+							<div class="progress-bar" data-percent="55%">
+								<span class="bar"></span>
+								<span class="text">55</span>
+							</div>
+						</div>
+						<div class="progress">
+							<h3 class="progress-title">JQuery</h3>
+							<div class="progress-bar" data-percent="85%">
+								<span class="bar"></span>
+								<span class="text">85</span>
+							</div>
+						</div>
+						<div class="progress">
+							<h3 class="progress-title">Angular.js</h3>
+							<div class="progress-bar"  data-percent="50%">
+								<span class="bar"></span>
+								<span class="text">50</span>
+							</div>
+						</div>
+						<div class="progress">
+							<h3 class="progress-title">npm, git</h3>
+							<div class="progress-bar"  data-percent="60%">
+								<span class="bar"></span>
+								<span class="text">60</span>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
 	</section>
-	<section class="panel turqoise">
-		<b>TWO</b>
-	</section>
-	<section class="panel green">
-		<b>THREE</b>
-	</section>
-	<section class="panel bordeaux">
-		<b>FOUR</b>
-	</section>
+<section id="portfolio">
+	<div class="box animated boxHidded"><h1><span class="ti-gallery"></span>Last work</h1></div>
+	<div class="portfolio-row  box1 animated boxHidded">
+		<div class="portfolio-item-big">
+		<a class="fancybox" rel="group" href="img/portfolio/computel_610.jpg"><img src="img/portfolio/technology_610.jpg" alt="computel"></a>
+		
+		<div class="portfolio-info">
+			<div class="portfolio-text">
+				<h2>COMPUTEL - LANDING PAGE</h2>
+				<p>Responsive landing page. Was used Twitter Bootstrap 3.</p>
+				<a href="#" class="preview"><span class="ti-link"></span></a>
+				<a class="fancybox preview" rel="group" href="img/portfolio/computel_610.jpg" 
+				><span class="ti-eye"></span></a>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="portfolio-item-small">
+		<a class="fancybox" rel="group" href="img/portfolio/ortoline.png"><img src="img/portfolio/shoe_295.jpg" alt="" /></a>
+
+		<div class="portfolio-info">
+			<div class="portfolio-text">
+				<h2>ORTOLINE  E-SHOP</h2>
+				<p>Main page of e-shop was <br>converted to HTML from PSD.</p>
+				<a href="#" class="preview"><span class="ti-link"></span></a>
+				<a class="fancybox preview" rel="group" href="img/portfolio/ortoline.png" 
+				><span class="ti-eye"></span></a>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-item-small">
+		<a class="fancybox" rel="group" href="img/portfolio/repair.jpg"><img src="img/portfolio/car_295.jpg" alt="" /></a>
+
+		<div class="portfolio-info">
+			<div class="portfolio-text">
+				<h2>AUTO REPAIR SHOP</h2>
+				<p>Convert from PSD to HTML</p>
+				<a href="#" class="preview"><span class="ti-link"></span></a>
+				<a class="fancybox preview" rel="group" href="img/portfolio/repair.jpg" 
+				><span class="ti-eye"></span></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="portfolio-row box2 animated boxHidded">
+	<div class="portfolio-item-small">
+
+		<a class="fancybox" rel="group" href="img/portfolio/accounting.png"><img src="img/portfolio/workspace_295.jpg" alt="" /></a>
+
+		<div class="portfolio-info">
+			<div class="portfolio-text">
+				<h2>BOOKKEEPING - LANDING PAGE</h2>
+				<p>Responsive landing page.</p>
+				<a href="#" class="preview"><span class="ti-link"></span></a>
+				<a class="fancybox preview" rel="group" href="img/portfolio/accounting.png" 
+				><span class="ti-eye"></span></a>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-item-small">
+		<a class="fancybox" rel="group" href="img/1_b.jpg"><img src="img/portfolio/tools_295.jpg" alt="" /></a>
+		<div class="portfolio-info">
+			<div class="portfolio-text">
+				<h2>EGGLY-APP</h2>
+				<p>Training Angular.js app. Was used Angular-Routing, Angular-Animate, Twitter Bootstrap</p>
+				<a href="#" class="preview"><span class="ti-link"></span></a>
+				<a class="fancybox preview" rel="group" href="img/portfolio/computel_610.jpg" 
+				><span class="ti-eye"></span></a>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-item-small">
+		<a class="fancybox" rel="group" href="img/1_b.jpg"><img src="img/portfolio/laptop.jpg" alt="" /></a>
+		<div class="portfolio-info">
+			<div class="portfolio-text">
+				<h2>LANDING PAGE</h2>
+				<p>Responsive landing page. Was used Twitter Bootstrap 3.</p>
+				<a href="#" class="preview"><span class="ti-link"></span></a>
+				<a class="fancybox preview" rel="group" href="img/portfolio/computel_610.jpg" 
+				><span class="ti-eye"></span></a>
+			</div>
+		</div>
+	</div>
+
 </div>
 
+</section>
 
-<script src="js/scroll.js"></script>
+<section id="contact">
+	<!-- <h1><span class="ti-email"></span>Contact</h1> -->
+	<div class="box animated boxHidded"><h1><span class="ti-email"></span>Contact</h1></div>
+
+	<div class="portfolio-item-small">
+		<a class="fancybox" rel="group" href="img/1_b.jpg"><img src="img/portfolio/laptop.jpg" alt="" /></a>
+		<div class="portfolio-info">
+			<div class="portfolio-text">
+				<h2>LANDING PAGE</h2>
+				<p>Responsive landing page. Was used Twitter Bootstrap 3.</p>
+				<a href="#" class="preview"><span class="ti-link"></span></a>
+				<a class="fancybox preview" rel="group" href="img/portfolio/computel_610.jpg" 
+				><span class="ti-eye"></span></a>
+			</div>
+		</div>
+</section>
+
+<script type="text/javascript">
+	
+$(document).ready(function() {
+	
+	$(".fancybox").fancybox({
+		'transitionIn'	:	'elastic',
+		
+	});
+});
+
+</script>
+
+
+
+
+
+	
+<script>
+	$(document).ready(function(){
+	$('.progress-bar').each(function(){
+		$(this).find('.bar').animate({
+			width:$(this).attr('data-percent')
+		},900);
+	});
+
+	$('.progress-bar').each(function(){
+		$(this).find('.text').animate({
+			left:$(this).attr('data-percent')
+		},900);
+	});
+});
+	
+</script>
+
+
+<script>
+$(document).ready(function(){
+
+		$('.text-container').waypoint(function() {
+		$(this).addClass('animated fadeInDown boxVisible');
+	}, {
+		offset:'80%'
+	}); 
+
+		$('.progress-bar').waypoint(function() {
+		$(this).addClass('animated fadeInLeft boxVisible');
+	}, {
+		offset:50
+	}); 
+
+
+	$('.goto-bio').waypoint(function() {
+		$(this).addClass('animated zoomInRight boxVisible');
+	}, {
+		offset:'80%'
+	});
+
+	$('.box1').waypoint(function(dir) {
+		if( dir === 'down')
+		$(this)
+	.removeClass('fadeOutLeft')
+	.addClass('fadeInRight');
+	else
+		$(this)
+	.removeClass('fadeInRight')
+	.addClass('fadeOutLeft');
+	}, {
+		offset:'60%'
+	})
+	.waypoint( function(dir) {
+		if ( dir === 'down')
+			$(this)
+				.removeClass('fadeInRight')
+				.addClass('fadeOutLeft');
+		else
+			$(this)
+				.removeClass('fadeOutLeft')
+				.addClass('fadeInRight');
+	},{
+		offset: -320
+	});
+	
+$('.box2').waypoint(function(dir) {
+		if( dir === 'down')
+		$(this)
+	.removeClass('fadeOutRight')
+	.addClass('fadeInLeft');
+	else
+		$(this)
+	.removeClass('fadeInLeft')
+	.addClass('fadeOutRight');
+	}, {
+		offset: '60%'
+	})
+	.waypoint( function(dir) {
+		if ( dir === 'down')
+			$(this)
+				.removeClass('fadeInLeft')
+				.addClass('fadeOutRight');
+		else
+			$(this)
+				.removeClass('fadeOutRight')
+				.addClass('fadeInLeft');
+	},{
+		offset: -20
+	});
+
+	$('.box').waypoint(function(dir) {
+		if( dir === 'down')
+		$(this)
+	.removeClass('fadeOutDown')
+	.addClass('fadeInUp');
+	else
+		$(this)
+	.removeClass('fadeInUp')
+	.addClass('fadeOutDown');
+	}, {
+		offset:'70%'
+	})
+	.waypoint( function(dir) {
+		if ( dir === 'down')
+			$(this)
+				.removeClass('fadeInUp')
+				.addClass('fadeOutDown');
+		else
+			$(this)
+				.removeClass('fadeOutDown')
+				.addClass('fadeInUp');
+	},{
+		offset: -20
+	});
+
+	$('.box3').waypoint(function(dir) {
+		if( dir === 'down')
+		$(this)
+	.removeClass('fadeOutDown')
+	.addClass('fadeInUp');
+	else
+		$(this)
+	.removeClass('fadeInUp')
+	.addClass('fadeOutDown');
+	}, {
+		offset:'50%'
+	})
+	.waypoint( function(dir) {
+		if ( dir === 'down')
+			$(this)
+				.removeClass('fadeInUp')
+				.addClass('fadeOutDown');
+		else
+			$(this)
+				.removeClass('fadeOutDown')
+				.addClass('fadeInUp');
+	},{
+		offset: -380
+	});
+});
+
+
+</script>
+
 <script src="js/codepen.js"></script>
 </body>
 </html>
