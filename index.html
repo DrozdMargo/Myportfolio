@@ -66,19 +66,36 @@ $(window).on('load', function () {
 });
 </script> -->
 
-<header>
+<header id="home">
+<video id="my-video" class="video" autoplay="autoplay" loop="loop" muted="">
+  <source src="img/macbook.mp4" type="video/mp4" />
+  <!-- <source src="media/demo.ogv" type="video/ogg" />
+  <source src="media/demo.webm" type="video/webm" /> -->
+ </video>
 	<div class="page-wrap">
-	
 		
-		<div class="text-container animated fadeInDown">
-			<span class="text-medium text animated fadeInDown">Hi! I'm</span>
-			<span class="text-large text boxHidded">Margo Drozd</span>
-			<span class="text-medium text boxHidded delay-1">Front-end developer</span>
-			
-		</div>
+		<div class="header-text">
+			<div class="header-text-name">
+				<span class="one animated boxHidded">M</span>
+				<span class="two animated boxHidded">A</span>
+				<span class="three animated boxHidded">R</span>
+				<span class="four animated boxHidded">G</span>
+				<span class="five animated boxHidded">O</span>
+				<span class="six animated boxHidded">D</span>
+				<span class="seven animated
+				 boxHidded">R</span>
+				<span class="eight animated boxHidded">O</span>
+				<span class="nine animated boxHidded">Z</span>
+				<span class="ten animated boxHidded">D</span>
+			</div>
+			<div class="header-text-profi">
+				<span class="prof animated boxHidded">front</span>
+				<span class="prof animated boxHidded">-end</span>
+				<span class="prof animated boxHidded"> developer</span>
+			</div>
 
-		<div class="goto-bio boxHidded"><a href="#About_me" class="text-small text">About me</a></div>
-	
+		</div>
+			
 	</div>
 </header>
 <!-- menu -->
@@ -92,53 +109,14 @@ $(window).on('load', function () {
   <nav class="overlay-menu">
     <ul>
       <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
+      <li><a href="#about_me">About</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contacts">Contact me</a></li>
     </ul>
   </nav>
 </div>
 <!-- end menu -->
-
-<section id="about_me">
-			<div class="container box3 animated boxHidded">
-				<div class="container-photo container-left clearfix">
-					<div class="photo-text">Advanced web developer with 12 years of experience in structuring, developing & implementing interactive website with the best use of technology & SEO to drive traffic.</div>
-				</div>
-				<div class="container-info clearfix">
-					<div class="container-info-title"><h3>About me</h3></div>
-					<div class="container-info-card">
-						<p class="info">
-						<span class="info-title">Full name</span> <span class="info-separator">:</span>
-						<span class="info-value">Margo Drozd</span></p>
-						<p class="info">
-						<span class="info-title">Age</span> <span class="info-separator">:</span>
-						<span class="info-value">25</span></p>
-						<p class="info">
-						<span class="info-title">Address</span> <span class="info-separator">:</span>
-						<span class="info-value">Ukraine, Kramatorsk</span></p>
-						
-						<p class="info">
-						<span class="info-title">Phone</span> <span class="info-separator">:</span>
-						<span class="info-value">+380956111773</span></p>
-						<p class="info">
-						<span class="info-title">Email</span> <span class="info-separator">:</span>
-						<span class="info-value">margodrozd.1@gmail.com</span></p>
-					</div>
-				</div>
-				<div class="links">
-							<a href="" class="tooltip" data-tooltip="download this cv" data-delay="50" data-position="left"><span class="ti-download" download></span></a>
-							<a href="#" class="tooltip" data-tooltip="skype: drozd-margo" data-delay="50"><span class="ti-skype"></span></a>
-							<a href="#" class="tooltip" data-tooltip="fork me on github" data-delay="50"><span class="ti-github"></span></a>
-							<a href="#" class="tooltip" data-tooltip="follow on linkedin" data-delay="50"><span class="ti-linkedin"></span></a>
-							<a href="#" class="tooltip" data-tooltip="follow on facebook" data-delay="50"><span class="ti-facebook"></span></a>		
-							<a href="#" class="tooltip" data-tooltip="follow on google+" data-delay="50"><span class="ti-google"></span></a>
-							
-				</div>
-			</div>
-		</section>
-
-	<section id="skills">
+<section id="skills">
 			<div class="container  box3 animated boxHidded">
 				<div class="container-left">
 					<div class="container-info-title"><h3>skills</h3></div>
@@ -182,7 +160,7 @@ $(window).on('load', function () {
 							<h3 class="progress-title">JQuery</h3>
 							<div class="progress-bar" data-percent="85%">
 								<span class="bar"></span>
-								<span class="text">85</span>
+								<span class="text boxHidded">85</span>
 							</div>
 						</div>
 						<div class="progress">
@@ -211,10 +189,10 @@ $(window).on('load', function () {
 		
 		<div class="portfolio-info">
 			<div class="portfolio-text">
-				<h2>COMPUTEL - LANDING PAGE</h2>
-				<p>Responsive landing page. Was used Twitter Bootstrap 3.</p>
+				<h2>EGGLY-APP</h2>
+				<p>Training Angular.js app. Was used Angular-Routing, Angular-Animate, Twitter Bootstrap</p>
 				<a href="#" class="preview"><span class="ti-link"></span></a>
-				<a class="fancybox preview" rel="group" href="img/portfolio/computel_610.jpg" 
+				<a class="fancybox preview" rel="group" href="img/portfolio/eggly.png" 
 				><span class="ti-eye"></span></a>
 			</div>
 		</div>
@@ -267,8 +245,8 @@ $(window).on('load', function () {
 		<a class="fancybox" rel="group" href="img/1_b.jpg"><img src="img/portfolio/tools_295.jpg" alt="" /></a>
 		<div class="portfolio-info">
 			<div class="portfolio-text">
-				<h2>EGGLY-APP</h2>
-				<p>Training Angular.js app. Was used Angular-Routing, Angular-Animate, Twitter Bootstrap</p>
+				<h2>COMPUTEL - LANDING PAGE</h2>
+				<p>Responsive landing page. Was used Twitter Bootstrap 3.</p>
 				<a href="#" class="preview"><span class="ti-link"></span></a>
 				<a class="fancybox preview" rel="group" href="img/portfolio/computel_610.jpg" 
 				><span class="ti-eye"></span></a>
@@ -287,28 +265,54 @@ $(window).on('load', function () {
 			</div>
 		</div>
 	</div>
-
 </div>
-
 </section>
 
-<section id="contact">
-	<!-- <h1><span class="ti-email"></span>Contact</h1> -->
-	<div class="box animated boxHidded"><h1><span class="ti-email"></span>Contact</h1></div>
-
-	<div class="portfolio-item-small">
-		<a class="fancybox" rel="group" href="img/1_b.jpg"><img src="img/portfolio/laptop.jpg" alt="" /></a>
-		<div class="portfolio-info">
-			<div class="portfolio-text">
-				<h2>LANDING PAGE</h2>
-				<p>Responsive landing page. Was used Twitter Bootstrap 3.</p>
-				<a href="#" class="preview"><span class="ti-link"></span></a>
-				<a class="fancybox preview" rel="group" href="img/portfolio/computel_610.jpg" 
-				><span class="ti-eye"></span></a>
+	
+<section id="about_me">
+			<div class="container box3 animated boxHidded">
+				<div class="container-photo container-left clearfix">
+					<div class="photo-text"><p>Front-end developer with 2 years of experience in developing & implementing interactive website with the best use of technology. My projects made with love and passionate...</p>
+					</div>
+				</div>
+				<div class="container-info clearfix">
+					<div class="container-info-title"><h3>About me</h3></div>
+					<div class="container-info-card">
+						<p class="info">
+						<span class="info-title">Full name</span> <span class="info-separator">:</span>
+						<span class="info-value">Margo Drozd</span></p>
+						<p class="info">
+						<span class="info-title">Age</span> <span class="info-separator">:</span>
+						<span class="info-value">25</span></p>
+						<p class="info">
+						<span class="info-title">Address</span> <span class="info-separator">:</span>
+						<span class="info-value">Ukraine, Kramatorsk</span></p>
+						
+						<p class="info">
+						<span class="info-title">Phone</span> <span class="info-separator">:</span>
+						<span class="info-value">+380956111773</span></p>
+						<p class="info">
+						<span class="info-title">Email</span> <span class="info-separator">:</span>
+						<span class="info-value">margodrozd.1@gmail.com</span></p>
+					</div>
+				</div>
+				<div class="links">
+							<a href="" class="tooltip" data-tooltip="download this cv" data-delay="50" data-position="left"><span class="ti-download" download></span></a>
+							<a href="#" class="tooltip" data-tooltip="skype: drozd-margo" data-delay="50"><span class="ti-skype"></span></a>
+							<a href="https://github.com/DrozdMargo" class="tooltip" data-tooltip="fork me on github" data-delay="50"><span class="ti-github"></span></a>
+							<a href="https://www.linkedin.com/in/margo-drozd-838aa910a?trk=hp-identity-name" class="tooltip" data-tooltip="follow on linkedin" data-delay="50"><span class="ti-linkedin"></span></a>
+							<a href="https://www.facebook.com/drozdmargo" class="tooltip" data-tooltip="follow on facebook" data-delay="50"><span class="ti-facebook"></span></a>		
+							<a href="#" class="tooltip" data-tooltip="follow on google+" data-delay="50"><span class="ti-google"></span></a>
+							
+				</div>
 			</div>
-		</div>
-</section>
+		</section>
 
+
+
+
+
+<!-- 
 <script type="text/javascript">
 	
 $(document).ready(function() {
@@ -320,11 +324,6 @@ $(document).ready(function() {
 });
 
 </script>
-
-
-
-
-
 	
 <script>
 	$(document).ready(function(){
@@ -347,16 +346,20 @@ $(document).ready(function() {
 <script>
 $(document).ready(function(){
 
-		$('.text-container').waypoint(function() {
-		$(this).addClass('animated fadeInDown boxVisible');
-	}, {
-		offset:'80%'
-	}); 
+		$('header span').addClass('fadeInUp boxVisible');
+	
 
-		$('.progress-bar').waypoint(function() {
+
+		$('.text').waypoint(function() {
 		$(this).addClass('animated fadeInLeft boxVisible');
 	}, {
-		offset:50
+		offset:'100%'
+	}); 
+
+		$('.bar').waypoint(function() {
+		$(this).addClass('animated fadeInLeft boxVisible');
+	}, {
+		offset:'90%'
 	}); 
 
 
@@ -376,7 +379,7 @@ $(document).ready(function(){
 	.removeClass('fadeInRight')
 	.addClass('fadeOutLeft');
 	}, {
-		offset:'60%'
+		offset:'80%'
 	})
 	.waypoint( function(dir) {
 		if ( dir === 'down')
@@ -388,7 +391,7 @@ $(document).ready(function(){
 				.removeClass('fadeOutLeft')
 				.addClass('fadeInRight');
 	},{
-		offset: -320
+		offset: -450
 	});
 	
 $('.box2').waypoint(function(dir) {
@@ -401,7 +404,7 @@ $('.box2').waypoint(function(dir) {
 	.removeClass('fadeInLeft')
 	.addClass('fadeOutRight');
 	}, {
-		offset: '60%'
+		offset: '90%'
 	})
 	.waypoint( function(dir) {
 		if ( dir === 'down')
@@ -451,7 +454,7 @@ $('.box2').waypoint(function(dir) {
 	.removeClass('fadeInUp')
 	.addClass('fadeOutDown');
 	}, {
-		offset:'50%'
+		offset:'80%'
 	})
 	.waypoint( function(dir) {
 		if ( dir === 'down')
@@ -468,8 +471,9 @@ $('.box2').waypoint(function(dir) {
 });
 
 
-</script>
+</script> -->
 
-<script src="js/codepen.js"></script>
+<!-- <script src="js/codepen.js"></script> -->
+<script src="js/main.js"></script>
 </body>
 </html>
